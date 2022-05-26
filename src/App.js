@@ -56,15 +56,13 @@ import React from 'react';
 
 function App() {
  
-  //  fetch("https://022q7o.csb.app/todos")
+// fetch("https://022q7o.csb.app/todos") -- from codesendbox not working
 
-  fetch("http://localhost:8080/todos")
+fetch("http://localhost:8080/todos")
    .then((r)=> r.json())
    .then((d)=>{
     console.log(d);
   });
- 
-  
   return (
     <div className="App">
       app
